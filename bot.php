@@ -54,11 +54,6 @@ else if($type == 'follow')
 								)
 							);
 }
-
-	
-
-
-
 else if($message['type']=='text')
 {
 	
@@ -78,9 +73,6 @@ else if($message['type']=='text')
 							);
 				$leave = true;
         }
-	
-	
-	$incomingMsg = strtolower($message['text']);
 	else if(strpos($incomingMsg,"สวัสดีบอท") !== false)
         {
 	$replyText = 'ไฟล์ 14215 พิมพ์ 14215'.chr(10);
@@ -96,7 +88,6 @@ else if($message['type']=='text')
 								)
 							);
         }
-	
 	else if(strpos($incomingMsg,"14215") !== false)
 		{
 $reply = array(
