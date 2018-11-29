@@ -150,7 +150,7 @@ array(
             'action' => array(
               'type' =>  'uri',
               'label' =>  'ดูผลสอบเทอมล่าสุด',
-               'uri' =>  'https://itdev.win/14215/1.pdf'
+               'uri' =>  'https://linebotba.herokuapp.com/1.php'
             )
             ),
           array(
@@ -158,7 +158,7 @@ array(
             'action' => array(
               'type' =>  'uri',
               'label' =>  'กิจกรรมประจำชุดวิชา',
-               'uri' =>  'https://itdev.win/14215/1.pdf'
+               'uri' =>  'https://linebotba.herokuapp.com/2.php'
             )
             ),
           array(
@@ -166,7 +166,23 @@ array(
             'action' => array(
               'type' =>  'uri',
               'label' =>  'ปฏิทินการศึกษา',
-               'uri' =>  'https://itdev.win/14215/1.pdf'
+               'uri' =>  'https://linebotba.herokuapp.com/3.php'
+            )
+            ),
+          array(
+            'type' =>  'button',
+            'action' => array(
+              'type' =>  'uri',
+              'label' =>  'd4lp STOU',
+               'uri' =>  'https://linebotba.herokuapp.com/4.php'
+            )
+            ),
+          array(
+            'type' =>  'button',
+            'action' => array(
+              'type' =>  'uri',
+              'label' =>  'Moodle STOU',
+               'uri' =>  'https://linebotba.herokuapp.com/5.php'
             )
             ),
           array(
@@ -174,20 +190,10 @@ array(
             'action' => array(
               'type' =>  'uri',
               'label' =>  'STOU Regis',
-               'uri' =>  'https://linebotba.herokuapp.com/1.php'
+               'uri' =>  'https://regis.stou.ac.th'
             )
             )
         )
-      )
-    )
-  ),
-  'footer' => array(
-    'type' =>  'box',
-    'layout' =>  'vertical',
-    'contents' => array(
-      array(
-        'type' =>  'spacer',
-        'size' =>  'sm'
       )
     )
   )
