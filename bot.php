@@ -54,29 +54,15 @@ else if($type == 'follow')
 								)
 							);
 }
-else if($message['type']=='text')
-{
-	$incomingMsg = strtolower($message['text']);
-	if(strpos($incomingMsg,"สวัสดีบอท") !== false)
-        {
-	$replyText = 'ไฟล์ 14215 พิมพ์ 14215'.chr(10);
-	$replyText .= 'ไฟล์ 14318 พิมพ์ 14318'.chr(10);
-	$replyText .= 'ไฟล์ 14212 พิมพ์ 14212';
-		$reply = array(
-								'replyToken' => $replyToken,														
-								'messages' => array(
-									array(
-											'type' => 'text',					
-											'text' => $replyText
-										)
-								)
-							);
-        }
 
 	
+
+
+
 else if($message['type']=='text')
 {
-	$incomingMsg = strtolower($message['text']);
+	
+        $incomingMsg = strtolower($message['text']);
 	if(strpos($incomingMsg,"เชิญบอทออก") !== false)
         {
 	$replyText = '';
@@ -91,7 +77,25 @@ else if($message['type']=='text')
 								)
 							);
 				$leave = true;
-        }	
+        }
+	
+	
+	$incomingMsg = strtolower($message['text']);
+	else if(strpos($incomingMsg,"สวัสดีบอท") !== false)
+        {
+	$replyText = 'ไฟล์ 14215 พิมพ์ 14215'.chr(10);
+	$replyText .= 'ไฟล์ 14318 พิมพ์ 14318'.chr(10);
+	$replyText .= 'ไฟล์ 14212 พิมพ์ 14212';
+		$reply = array(
+								'replyToken' => $replyToken,														
+								'messages' => array(
+									array(
+											'type' => 'text',					
+											'text' => $replyText
+										)
+								)
+							);
+        }
 	
 	else if(strpos($incomingMsg,"14215") !== false)
 		{
