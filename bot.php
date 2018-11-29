@@ -85,7 +85,7 @@ array(
   'type' =>  'bubble',
   'hero' => array(
     'type' =>  'image',
-    'url' =>  'https://i.ytimg.com/vi/taNCBWzkgWs/maxresdefault.jpg',
+    'url' =>  'https://itdev.win/14215/14215.jpg',
     'size' =>  'full',
     'aspectRatio' =>  '20:13',
     'aspectMode' =>  'cover'
@@ -100,7 +100,7 @@ array(
     'contents' => array(
       array(
         'type' =>  'text',
-        'text' =>  'เลขเด็ดงวด 1 ธันวาคม 61',
+        'text' =>  'ไฟล์บทเรียนวิชาภาษาศาสตร์เบื้องต้น',
         'size' =>  'xl',
         'weight' =>  'bold'
       ),
@@ -114,9 +114,25 @@ array(
             'action' => array(
               'type' =>  'uri',
               'label' =>  'หน่วยที่1',
-              'uri' =>  'https://facebook.com'
+              'uri' =>  'https://itdev.win/14215/1.pdf'
             )
-          )
+            ),
+          array(
+            'type' =>  'button',
+            'action' => array(
+              'type' =>  'uri',
+              'label' =>  'หน่วยที่2',
+              'uri' =>  'https://itdev.win/14215/2.pdf'
+            )
+            ),
+          array(
+            'type' =>  'button',
+            'action' => array(
+              'type' =>  'uri',
+              'label' =>  'หน่วยที่3',
+              'uri' =>  'https://itdev.win/14215/3.pdf'
+            )
+            )
         )
       )
     )
