@@ -55,6 +55,20 @@ else if($type == 'follow')
 								)
 							);
 }
+else if($type == 'join') 
+{
+	$replyText = '';
+	
+	$reply = array(
+								'replyToken' => $replyToken,														
+								'messages' => array(
+									array(
+											'type' => 'text',					
+											'text' => $replyText
+										)
+								)
+							);
+}
 else if($message['type']=='text')
 {
 	
