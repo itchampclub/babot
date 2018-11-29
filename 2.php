@@ -1,5 +1,5 @@
 <html>
 <?php
-header('Location: http://regis.stou.ac.th/');
+header('Location: http://www.stou.ac.th/Offices/ore/rere/goto/homework');
 exit;
 ?>
