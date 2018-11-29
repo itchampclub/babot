@@ -103,38 +103,7 @@ else if($message['type']=='text')
 								)
 							);
         }
-	else if(strpos($incomingMsg,"ทดสอบ") !== false)
-        {
-	$replyText = 'ไฟล์ 14215 พิมพ์ 14215';
-		$reply = array(
-								'replyToken' => $replyToken,														
-								'messages' => array(
-array(  
-  'type' =>  'flex',
-  'altText' =>  'this is a flex message',
-  'contents' =>  array(
-    'type' =>  'bubble',
-    'body' =>  array(
-      'type' =>  'box',
-      'layout' =>  'vertical',
-      'contents' =>  array(
-        array(
-          'type' =>  'message',
-          'label' =>  'yes'
-          'text' =>  'yes',
-        ),
-        array(
-          'type' =>  'message',
-          'label' =>  'no'
-          'text' =>  'no',
-        )
-      )
-    )
-  )
-)
-								)
-							);
-        }
+
 	else if(strpos($incomingMsg,"14215") !== false)
 		{
 $reply = array(
