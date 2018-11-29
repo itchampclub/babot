@@ -1,6 +1,7 @@
 <?php
 require_once('./LineBotTiny.php');
-$channelAccessToken = 'Token';
+$channelAccessToken = '1B8pMUtZdLgdebgTuRrxV3YirCQv91mbXGnxvlTbX7Cxn471Fs0bBgwGVpedxnPKm7tZUWxnMrT2NqCBCLAG8L7r6vtYoZwb3iqRvYr3BZGrZX/mRNFG8lzNbLr5CHO4PWfTicerD5PVHYjC8mpQ4wdB04t89/1O/w1cDnyilFU=';
+$channelSecret = '69b2d81ee6e8ff48d2cacdc8c7d8c337';
 date_default_timezone_set('Asia/Jakarta');
 $client 		= new LINEBotTiny($channelAccessToken, $channelSecret);
 $reply 			= '';
@@ -13,14 +14,8 @@ $replyToken 	= $event['replyToken'];
 $timestamp		= $event['timestamp'];
 $message 		= $event['message'];
 $messageid 		= $message['id'];
-	$n1 = mt_rand(100000,999999);
-        $item1 = (string)$n1;
-	$nf3 = mt_rand(100,999);
-        $item2 = (string)$nf3;
-	$nb3 = mt_rand(100,999);
-        $item3 = (string)$nb3;
-	$nb2 = mt_rand(00,99);
-        $item4 = (string)$nb2;
+
+
 if($source['type'] == "group") {
 			$userData = $client->getProfilFromGroup($userId, $source['groupId']);
 		}
@@ -30,9 +25,10 @@ if($source['type'] == "group") {
 		else if($source['type'] == "user") {
 			$userData = $client->profil($userId);
 		}
+
 if($type == 'memberJoined') 
 {
-	$replyText = "Hi";
+	$replyText = "";
 	
 	$reply = array(
 								'replyToken' => $replyToken,														
@@ -61,7 +57,7 @@ else if($type == 'follow')
 else if($message['type']=='text')
 {
 	$incomingMsg = strtolower($message['text']);
-	if(strpos($incomingMsg,"999") !== false)
+	if(strpos($incomingMsg,"id") !== false)
         {
 	        $replyText = "Hi ".$source['userId'];
 		$reply = array(
@@ -69,13 +65,13 @@ else if($message['type']=='text')
 								'messages' => array(
 									array(
 											'type' => 'text',					
-											'text' => $userData
+											'text' => $replyText
 										)
 								)
 							);
 		$leave = true;
         }
-	else if(strpos($incomingMsg,"ขอหวย") !== false)
+	else if(strpos($incomingMsg,"ไฟล์14215") !== false)
 		{
 $reply = array(
 'replyToken' => $replyToken,														
@@ -122,84 +118,56 @@ array(
             'type' =>  'box',
             'layout' =>  'baseline',
             'contents' => array(
-              array(
-                'type' =>  'text',
-                'text' =>  'รางวัลที่ 1',
-                'weight' =>  'bold',
-                'margin' =>  'sm',
-                'flex' => 0
-              ),
-              array(
-                'type' =>  'text',
-                'text' =>  $item1,
-                'size' =>  'sm',
-                'weight' =>  'bold',
-                'align' =>  'end',
-                'color' =>  '#000000'
-              )
+          array(
+            'type' =>  'button',
+            'action' => array(
+              'type' =>  'uri',
+              'label' =>  'หน่วยที่1',
+              'uri' =>  'https://facebook.com'
+            )
+            )
             )
           ),	
           array(
             'type' =>  'box',
             'layout' =>  'baseline',
             'contents' => array(
-              array(
-                'type' =>  'text',
-                'text' =>  'เลขหน้า 3 ตัว',
-                'weight' =>  'bold',
-                'margin' =>  'sm',
-                'flex' => 0
-              ),
-              array(
-                'type' =>  'text',
-                'text' =>  $item2,
-                'size' =>  'sm',
-                'weight' =>  'bold',
-                'align' =>  'end',
-                'color' =>  '#000000'
-              )
+          array(
+            'type' =>  'button',
+            'action' => array(
+              'type' =>  'uri',
+              'label' =>  'หน่วยที่2',
+              'uri' =>  'https://linecorp.com'
+            )
+            )
             )
           ),	
           array(
             'type' =>  'box',
             'layout' =>  'baseline',
             'contents' => array(
-              array(
-                'type' =>  'text',
-                'text' =>  'เลขท้าย 3 ตัว',
-                'weight' =>  'bold',
-                'margin' =>  'sm',
-                'flex' => 0
-              ),
-              array(
-                'type' =>  'text',
-                'text' =>  $item3,
-                'size' =>  'sm',
-                'weight' =>  'bold',
-                'align' =>  'end',
-                'color' =>  '#000000'
-              )
+          array(
+            'type' =>  'button',
+            'action' => array(
+              'type' =>  'uri',
+              'label' =>  'หน่วยที่3',
+              'uri' =>  'https://google.com'
+            )
+            )
             )
           ),
           array(
             'type' =>  'box',
             'layout' =>  'baseline',
             'contents' => array(
-              array(
-                'type' =>  'text',
-                'text' =>  'เลขท้าย 2 ตัว',
-                'weight' =>  'bold',
-                'margin' =>  'sm',
-                'flex' => 0
-              ),
-              array(
-                'type' =>  'text',
-                'text' =>  $item4,
-                'size' =>  'sm',
-                'weight' =>  'bold',
-                'align' =>  'end',
-                'color' =>  '#000000'
-              )
+          array(
+            'type' =>  'button',
+            'action' => array(
+              'type' =>  'uri',
+              'label' =>  'หน่วยที่4',
+              'uri' =>  'https://youtube.com'
+            )
+            )
             )
           )
 		
