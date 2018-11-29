@@ -107,7 +107,7 @@ array(
       array(
         'type' =>  'box',
         'layout' =>  'vertical',
-        'spacing' =>  'sm',
+        'spacing' =>  'none',
         'contents' => array(
           array(
             'type' =>  'button',
