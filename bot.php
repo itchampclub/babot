@@ -71,11 +71,12 @@ else if($message['type']=='text')
 							);
 		$leave = true;
         }
-	else if(strpos($incomingMsg,"ไฟล์14215") !== false)
+	else if(strpos($incomingMsg,"14215") !== false)
 		{
 $reply = array(
 'replyToken' => $replyToken,														
 'messages' => array(
+	
 array(
     'type' => 'flex',
     'altText' => 'Flex',
@@ -97,27 +98,17 @@ array(
     'layout' =>  'vertical',
     'spacing' =>  'md',
     'contents' => array(
-	    
-	    
-	    
       array(
         'type' =>  'text',
         'text' =>  'เลขเด็ดงวด 1 ธันวาคม 61',
         'size' =>  'xl',
         'weight' =>  'bold'
       ),
-	    
       array(
         'type' =>  'box',
         'layout' =>  'vertical',
         'spacing' =>  'sm',
         'contents' => array(
-		
-		
-          array(
-            'type' =>  'box',
-            'layout' =>  'baseline',
-            'contents' => array(
           array(
             'type' =>  'button',
             'action' => array(
@@ -125,65 +116,13 @@ array(
               'label' =>  'หน่วยที่1',
               'uri' =>  'https://facebook.com'
             )
-            )
-            )
-          ),	
-          array(
-            'type' =>  'box',
-            'layout' =>  'baseline',
-            'contents' => array(
-          array(
-            'type' =>  'button',
-            'action' => array(
-              'type' =>  'uri',
-              'label' =>  'หน่วยที่2',
-              'uri' =>  'https://linecorp.com'
-            )
-            )
-            )
-          ),	
-          array(
-            'type' =>  'box',
-            'layout' =>  'baseline',
-            'contents' => array(
-          array(
-            'type' =>  'button',
-            'action' => array(
-              'type' =>  'uri',
-              'label' =>  'หน่วยที่3',
-              'uri' =>  'https://google.com'
-            )
-            )
-            )
-          ),
-          array(
-            'type' =>  'box',
-            'layout' =>  'baseline',
-            'contents' => array(
-          array(
-            'type' =>  'button',
-            'action' => array(
-              'type' =>  'uri',
-              'label' =>  'หน่วยที่4',
-              'uri' =>  'https://youtube.com'
-            )
-            )
-            )
           )
-		
         )
-      ),
-      array(
-        'type' =>  'text',
-        'text' =>  'สำนักอาจารย์คง',
-        'wrap' => true,
-        'color' =>  '#aaaaaa',
-        'size' =>  'xxs'
       )
-	    
     )
   ),
-	    
+
+	   
   'footer' => array(
     'type' =>  'box',
     'layout' =>  'vertical',
