@@ -59,7 +59,7 @@ else if($message['type']=='text')
 	$incomingMsg = strtolower($message['text']);
 	if(strpos($incomingMsg,"สวัสดีบอท") !== false)
         {
-	        $replyText = 'ขอไฟล์ 14215 พิมพ์ 14215\nขอไฟล์ 14318 พิมพ์ 14318 /n 555';
+	        $replyText = 'ขอไฟล์ 14215 พิมพ์ 14215'.chr(13),'ขอไฟล์ 14318 พิมพ์ 14318';
 		$reply = array(
 								'replyToken' => $replyToken,														
 								'messages' => array(
