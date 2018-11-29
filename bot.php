@@ -125,17 +125,22 @@ array(
     'type' =>  'box',
     'layout' =>  'vertical',
     'contents' => array(
-      array(
-	      
-          'type' => 'message',
-          'label' => 'yes',
-          'text' => 'yes'
-        ),
-        array(
-          'type' => 'message',
-          'label' => 'no',
-          'text' => 'no'
-        )
+          array(
+            'type' =>  'button',
+            'action' => array(
+              'type' =>  'message',
+              'label' =>  'yes',
+              'text' =>  'yes'
+            )
+	),
+          array(
+            'type' =>  'button',
+            'action' => array(
+              'type' =>  'message',
+              'label' =>  'yes',
+              'text' =>  'yes'
+            )
+	),
       )
     )
   )
