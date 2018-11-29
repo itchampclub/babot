@@ -174,7 +174,7 @@ array(
             'action' => array(
               'type' =>  'uri',
               'label' =>  'STOU Regis',
-               'uri' =>  'https://linebotba.herokuapp.com/a.php'
+               'uri' =>  'https://linebotba.herokuapp.com/1.php'
             )
             )
         )
