@@ -72,6 +72,27 @@ else if($message['type']=='text')
 								)
 							);
         }
+
+	
+else if($message['type']=='text')
+{
+	$incomingMsg = strtolower($message['text']);
+	if(strpos($incomingMsg,"เชิญบอทออก") !== false)
+        {
+	$replyText = '';
+
+		$reply = array(
+								'replyToken' => $replyToken,														
+								'messages' => array(
+									array(
+											'type' => 'text',					
+											'text' => $replyText
+										)
+								)
+							);
+				$leave = true;
+        }	
+	
 	else if(strpos($incomingMsg,"14215") !== false)
 		{
 $reply = array(
