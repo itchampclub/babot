@@ -1,5 +1,5 @@
 <html>
 <?php
-header('Location: http://regis.stou.ac.th/');
+header('Location: http://d4lp.stou.ac.th');
 exit;
 ?>
