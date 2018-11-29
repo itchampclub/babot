@@ -100,7 +100,7 @@ array(
     'contents' => array(
       array(
         'type' =>  'text',
-        'text' =>  'ภาษาศาสตร์เบื้องต้น',
+        'text' =>  'Linguistics 14215',
         'size' =>  'xl',
         'weight' =>  'bold'
       ),
