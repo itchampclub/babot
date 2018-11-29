@@ -43,7 +43,7 @@ if($type == 'memberJoined')
 }
 else if($type == 'follow') 
 {
-	$replyText = 'สวัสดีครับ มีอะไรให้ช่วยเหลือพิมพ์ "สวัสดีบอท"';
+	$replyText = 'สวัสดีครับ มีอะไรให้ช่วยเหลือพิมพ์ "help"';
 	
 	$reply = array(
 								'replyToken' => $replyToken,														
@@ -73,7 +73,7 @@ else if($message['type']=='text')
 {
 	
         $incomingMsg = strtolower($message['text']);
-	if(strpos($incomingMsg,"เชิญบอทออก") !== false)
+	if(strpos($incomingMsg,"kick") !== false)
         {
 	$replyText = '';
 
@@ -88,7 +88,7 @@ else if($message['type']=='text')
 							);
 				$leave = true;
         }
-	else if(strpos($incomingMsg,"สวัสดีบอท") !== false)
+	else if(strpos($incomingMsg,"hellobot") !== false)
         {
 	$replyText = 'ไฟล์ 14215 พิมพ์ 14215'.chr(10);
 	$replyText .= 'ไฟล์ 14318 พิมพ์ 14318'.chr(10);
@@ -142,7 +142,7 @@ array(
             'action' => array(
               'type' =>  'message',
               'label' =>  'ดาวน์โหลดไฟล์รายวิชา',
-              'text' =>  'รายชื่อวิชา'
+              'text' =>  'รายชื่อวิชาที่มีไฟล์'
             )
             ),
           array(
@@ -202,10 +202,56 @@ array(
 							)	
 							);
         }	
+
+	
+	else if(strpos($incomingMsg,"รายชื่อวิชาที่มีไฟล์") !== false)
+		{
+$reply = array(
+'replyToken' => $replyToken,														
+'messages' => array(
+	
+array(
+    'type' => 'flex',
+    'altText' => 'Flex',
+    'contents' => array(
+	    
+  'type' =>  'bubble',
+  'body' => array(
+    'type' =>  'box',
+    'layout' =>  'vertical',
+    'spacing' =>  'md',
+    'contents' => array(
+      array(
+        'type' =>  'text',
+        'text' =>  'Subjects List',
+        'size' =>  'xl',
+        'weight' =>  'bold'
+      ),
+      array(
+        'type' =>  'box',
+        'layout' =>  'vertical',
+        'spacing' =>  'none',
+        'contents' => array(
+          array(
+            'type' =>  'button',
+            'action' => array(
+              'type' =>  'message',
+              'label' =>  '14215 ภาษาศาสตร์เบื้องต้น',
+              'text' =>  'dlfile14215'
+            )
+            )
+        )
+      )
+    )
+  )
+	                                                )
+							)
+							)	
+							);
+        }		
 	
 	
-	
-	else if(strpos($incomingMsg,"14215") !== false)
+	else if(strpos($incomingMsg,"dlfile14215") !== false)
 		{
 $reply = array(
 'replyToken' => $replyToken,														
@@ -367,18 +413,6 @@ array(
       )
     )
   ),
-
-	   
-  'footer' => array(
-    'type' =>  'box',
-    'layout' =>  'vertical',
-    'contents' => array(
-      array(
-        'type' =>  'spacer',
-        'size' =>  'sm'
-      )
-    )
-  )
 	                                                )
 							)
 							)	
