@@ -16,7 +16,8 @@ $message 		= $event['message'];
 $messageid 		= $message['id'];
 
 
-if($source['type'] == "group") {
+		$userData = null;
+		if($source['type'] == "group") {
 			$userData = $client->getProfilFromGroup($userId, $source['groupId']);
 		}
 		else if($source['type'] == "room") {
@@ -269,17 +270,6 @@ array(
 	       }
 	else if(strpos($incomingMsg,"groupid") !== false)
 	{
-		$userData = null;
-		if($source['type'] == "group") {
-			$userData = $client->getProfilFromGroup($userId, $source['groupId']);
-		}
-		else if($source['type'] == "room") {
-			$userData = $client->getProfilFromRoom($userId, $source['roomId']);
-		}
-		else if($source['type'] == "user") {
-			$userData = $client->profil($userId);
-		}
-		
 		if($userData != null) {
 			$replyText = "Hi ".$source['groupId'];
 			$reply = array(
@@ -294,6 +284,7 @@ array(
 		}
 	}
 }
+
 if($reply != "") {
 				
 		$client->replyMessage($reply);
