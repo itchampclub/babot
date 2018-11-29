@@ -71,7 +71,6 @@ else if($message['type']=='text')
 										)
 								)
 							);
-		$leave = true;
         }
 	else if(strpos($incomingMsg,"14215") !== false)
 		{
