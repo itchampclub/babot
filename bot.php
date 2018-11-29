@@ -42,7 +42,7 @@ if($type == 'memberJoined')
 }
 else if($type == 'follow') 
 {
-	$replyText = 'พิมพ์ขอหวย';
+	$replyText = 'สวัสดีครับ มีอะไรให้ช่วยเหลือพิมพ์ "สวัสดีบอท"';
 	
 	$reply = array(
 								'replyToken' => $replyToken,														
@@ -57,9 +57,9 @@ else if($type == 'follow')
 else if($message['type']=='text')
 {
 	$incomingMsg = strtolower($message['text']);
-	if(strpos($incomingMsg,"id") !== false)
+	if(strpos($incomingMsg,"สวัสดีบอท") !== false)
         {
-	        $replyText = "Hi ".$source['userId'];
+	        $replyText = 'ขอไฟล์ 14215 พิมพ์ 14215\nขอไฟล์ 14318 พิมพ์ 14318 /n 555';
 		$reply = array(
 								'replyToken' => $replyToken,														
 								'messages' => array(
