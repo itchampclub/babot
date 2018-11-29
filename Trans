@@ -1,12 +1,5 @@
 <?php
 
-// NOTE: Be sure to uncomment the following line in your php.ini file.
-// ;extension=php_openssl.dll
-
-// **********************************************
-// *** Update or verify the following values. ***
-// **********************************************
-
 // Replace the subscriptionKey string value with your valid subscription key.
 $key = 'ENTER KEY HERE';
 
@@ -14,9 +7,9 @@ $host = "https://api.cognitive.microsofttranslator.com";
 $path = "/translate?api-version=3.0";
 
 // Translate to German and Italian.
-$params = "&to=de&to=it";
+$params = "to=th";
 
-$text = "Hello, world!";
+$text = "Hello";
 
 if (!function_exists('com_create_guid')) {
   function com_create_guid() {
@@ -36,9 +29,6 @@ function Translate ($host, $path, $key, $params, $content) {
         "Content-length: " . strlen($content) . "\r\n" .
         "Ocp-Apim-Subscription-Key: $key\r\n" .
         "X-ClientTraceId: " . com_create_guid() . "\r\n";
-
-    // NOTE: Use the key 'http' even if you are making an HTTPS request. See:
-    // http://php.net/manual/en/function.stream-context-create.php
     $options = array (
         'http' => array (
             'header' => $headers,
@@ -57,12 +47,7 @@ $requestBody = array (
     ),
 );
 $content = json_encode($requestBody);
-
 $result = Translate ($host, $path, $key, $params, $content);
-
-// Note: We convert result, which is JSON, to and from an object so we can pretty-print it.
-// We want to avoid escaping any Unicode characters that result contains. See:
-// http://php.net/manual/en/function.json-encode.php
 $json = json_encode(json_decode($result), JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT);
 echo $json;
 ?>
