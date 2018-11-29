@@ -121,16 +121,6 @@ array(
     'contents' => array(
 	    
   'type' =>  'bubble',
-  'hero' => array(
-    'type' =>  'image',
-    'url' =>  'https://itdev.win/14215/14215.jpg',
-    'size' =>  'full',
-    'aspectRatio' =>  '20:13',
-    'aspectMode' =>  'cover'
-  ),
-	
-	    
-	    
   'body' => array(
     'type' =>  'box',
     'layout' =>  'vertical',
