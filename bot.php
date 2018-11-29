@@ -109,7 +109,7 @@ else if($message['type']=='text')
 	
 	
 	
-	else if(strpos($incomingMsg,"ทดสอบ") !== false)
+	else if(strpos($incomingMsg,"help") !== false)
 		{
 $reply = array(
 'replyToken' => $replyToken,														
@@ -128,7 +128,7 @@ array(
     'contents' => array(
       array(
         'type' =>  'text',
-        'text' =>  'Linguistics 14215',
+        'text' =>  'Help Menu',
         'size' =>  'xl',
         'weight' =>  'bold'
       ),
@@ -141,8 +141,40 @@ array(
             'type' =>  'button',
             'action' => array(
               'type' =>  'message',
-              'label' =>  'yes',
-              'text' =>  'yes'
+              'label' =>  'ดาวน์โหลดไฟล์รายวิชา',
+              'text' =>  'รายชื่อวิชา'
+            )
+            ),
+          array(
+            'type' =>  'button',
+            'action' => array(
+              'type' =>  'uri',
+              'label' =>  'ดูผลสอบเทอมล่าสุด',
+               'uri' =>  'https://itdev.win/14215/1.pdf'
+            )
+            ),
+          array(
+            'type' =>  'button',
+            'action' => array(
+              'type' =>  'uri',
+              'label' =>  'กิจกรรมประจำชุดวิชา',
+               'uri' =>  'https://itdev.win/14215/1.pdf'
+            )
+            ),
+          array(
+            'type' =>  'button',
+            'action' => array(
+              'type' =>  'uri',
+              'label' =>  'ปฏิทินการศึกษา',
+               'uri' =>  'https://itdev.win/14215/1.pdf'
+            )
+            ),
+          array(
+            'type' =>  'button',
+            'action' => array(
+              'type' =>  'uri',
+              'label' =>  'STOU Regis',
+               'uri' =>  'https://linebotba.herokuapp.com/a.php'
             )
             )
         )
