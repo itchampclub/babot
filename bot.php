@@ -114,6 +114,7 @@ else if($message['type']=='text')
 $reply = array(
 'replyToken' => $replyToken,														
 'messages' => array(
+	
 array(
     'type' => 'flex',
     'altText' => 'Flex',
@@ -121,31 +122,56 @@ array(
 	    
   'type' =>  'bubble',
   'hero' => array(
-	  
+    'type' =>  'image',
+    'url' =>  'https://itdev.win/14215/14215.jpg',
+    'size' =>  'full',
+    'aspectRatio' =>  '20:13',
+    'aspectMode' =>  'cover'
+  ),
+	
+	    
+	    
+  'body' => array(
+    'type' =>  'box',
+    'layout' =>  'vertical',
+    'spacing' =>  'md',
+    'contents' => array(
+      array(
+        'type' =>  'text',
+        'text' =>  'Linguistics 14215',
+        'size' =>  'xl',
+        'weight' =>  'bold'
+      ),
+      array(
+        'type' =>  'box',
+        'layout' =>  'vertical',
+        'spacing' =>  'none',
+        'contents' => array(
+          array(
+            'type' =>  'button',
+            'action' => array(
+              'type' =>  'message',
+              'label' =>  'yes',
+              'text' =>  'yes'
+            )
+            )
+        )
+      )
+    )
+  ),
+  'footer' => array(
     'type' =>  'box',
     'layout' =>  'vertical',
     'contents' => array(
-          array(
-            'type' =>  'button',
-            'action' => array(
-              'type' =>  'message',
-              'label' =>  'yes',
-              'text' =>  'yes'
-            )
-	),
-          array(
-            'type' =>  'button',
-            'action' => array(
-              'type' =>  'message',
-              'label' =>  'yes',
-              'text' =>  'yes'
-            )
-	),
+      array(
+        'type' =>  'spacer',
+        'size' =>  'sm'
       )
     )
   )
-)
-								)
+	                                                )
+							)
+							)	
 							);
         }	
 	
