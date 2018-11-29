@@ -104,6 +104,45 @@ else if($message['type']=='text')
 							);
         }
 
+	
+	
+	
+	
+	
+	else if(strpos($incomingMsg,"ทดสอบ") !== false)
+        {
+		$reply = array(
+								'replyToken' => $replyToken,														
+								'messages' => array(
+array(
+  'type' => 'flex',
+  'altText' => 'flex message',
+  'contents' => array(
+    'type' => 'bubble',
+    'body' => array(
+      'type' => 'box',
+      'layout' => 'vertical',
+      'contents' => array(
+        array(
+          'type' => 'message',
+          'label' => 'yes'
+          'text' => 'yes',
+        ),
+        array(
+          'type' => 'message',
+          'label' => 'no'
+          'text' => 'no',
+        )
+      )
+    )
+  )
+)
+								)
+							);
+        }	
+	
+	
+	
 	else if(strpos($incomingMsg,"14215") !== false)
 		{
 $reply = array(
