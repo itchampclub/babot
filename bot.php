@@ -273,7 +273,7 @@ array(
     'contents' => array(
       array(
         'type' =>  'spacer',
-        'size' =>  'xxl'
+        'size' =>  'sm'
       )
     )
   )
