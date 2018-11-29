@@ -110,28 +110,31 @@ else if($message['type']=='text')
 	
 	
 	else if(strpos($incomingMsg,"ทดสอบ") !== false)
-        {
-		$reply = array(
-								'replyToken' => $replyToken,														
-								'messages' => array(
+		{
+$reply = array(
+'replyToken' => $replyToken,														
+'messages' => array(
 array(
-  'type' => 'flex',
-  'altText' => 'flex message',
-  'contents' => array(
-    'type' => 'bubble',
-    'body' => array(
-      'type' => 'box',
-      'layout' => 'vertical',
-      'contents' => array(
-        array(
+    'type' => 'flex',
+    'altText' => 'Flex',
+    'contents' => array(
+	    
+  'type' =>  'bubble',
+  'hero' => array(
+	  
+    'type' =>  'box',
+    'layout' =>  'vertical',
+    'contents' => array(
+      array(
+	      
           'type' => 'message',
-          'label' => 'yes'
-          'text' => 'yes',
+          'label' => 'yes',
+          'text' => 'yes'
         ),
         array(
           'type' => 'message',
-          'label' => 'no'
-          'text' => 'no',
+          'label' => 'no',
+          'text' => 'no'
         )
       )
     )
