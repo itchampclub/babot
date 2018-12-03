@@ -88,11 +88,10 @@ else if($message['type']=='text')
 							);
 				$leave = true;
         }
-	else if(strpos($incomingMsg,"hellobot") !== false)
+	else if(strpos($incomingMsg,"msg") !== false)
         {
-	$replyText = 'ไฟล์ 14215 พิมพ์ 14215'.chr(10);
-	$replyText .= 'ไฟล์ 14318 พิมพ์ 14318'.chr(10);
-	$replyText .= 'ไฟล์ 14212 พิมพ์ 14212';
+	$replyText = '123 ๑๒๓'.chr(10);
+	$replyText .= 'ABC กขค @#$'.chr(10);
 		$reply = array(
 								'replyToken' => $replyToken,														
 								'messages' => array(
@@ -236,8 +235,40 @@ array(
             'type' =>  'button',
             'action' => array(
               'type' =>  'message',
+              'label' =>  '14211 การเรียนรู้ภาษาอังกฤษด้วยตนเอง',
+              'text' =>  'dlfile14111'
+            )
+            ),
+          array(
+            'type' =>  'button',
+            'action' => array(
+              'type' =>  'message',
+              'label' =>  '14213 การเรียนรู้ภาษาอังกฤษด้วยตนเอง',
+              'text' =>  'dlfile14113'
+            )
+            ),
+          array(
+            'type' =>  'button',
+            'action' => array(
+              'type' =>  'message',
+              'label' =>  '14216 การเรียนรู้ภาษาอังกฤษด้วยตนเอง',
+              'text' =>  'dlfile14116'
+            )
+            ),
+          array(
+            'type' =>  'button',
+            'action' => array(
+              'type' =>  'message',
               'label' =>  '14215 ภาษาศาสตร์เบื้องต้น',
               'text' =>  'dlfile14215'
+            )
+            ),
+          array(
+            'type' =>  'button',
+            'action' => array(
+              'type' =>  'message',
+              'label' =>  '14318 ทักษะการแปล',
+              'text' =>  'dlfile14318'
             )
             )
         )
