@@ -1,3 +1,5 @@
+<?
+
 else if(strpos($incomingMsg,"dlfile14215") !== false)
 		{
 $reply = array(
@@ -165,3 +167,8 @@ array(
 							)	
 							);
 	       }
+
+
+
+
+?>
