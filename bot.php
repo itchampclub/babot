@@ -235,7 +235,7 @@ array(
             'type' =>  'button',
             'action' => array(
               'type' =>  'message',
-              'label' =>  '14111 ทักษะการเรียนรู้ภาษาอังกฤษด้วยตนเอง',
+              'label' =>  '14111 Self-Study Skills',
               'text' =>  'dlfile14111'
             )
             ),
@@ -243,7 +243,7 @@ array(
             'type' =>  'button',
             'action' => array(
               'type' =>  'message',
-              'label' =>  '14213 การอ่านภาษาอังกฤษ 1',
+              'label' =>  '14213 English Reading 1',
               'text' =>  'dlfile14213'
             )
             ),
@@ -251,7 +251,7 @@ array(
             'type' =>  'button',
             'action' => array(
               'type' =>  'message',
-              'label' =>  '14214 การเขียนภาษาอังกฤษ 1',
+              'label' =>  '14214 English Writing 1',
               'text' =>  'dlfile14214'
             )
             ),
@@ -259,7 +259,7 @@ array(
             'type' =>  'button',
             'action' => array(
               'type' =>  'message',
-              'label' =>  '14215 ภาษาศาสตร์ภาษาอังกฤษเบื้องต้น',
+              'label' =>  '14215 Linguistics',
               'text' =>  'dlfile14215'
             )
             ),
@@ -267,7 +267,7 @@ array(
             'type' =>  'button',
             'action' => array(
               'type' =>  'message',
-              'label' =>  '14216 การสื่อสารระหว่างวัฒนธรรม',
+              'label' =>  '14216 Intercultural Communication',
               'text' =>  'dlfile14216'
             )
             ),
@@ -275,7 +275,7 @@ array(
             'type' =>  'button',
             'action' => array(
               'type' =>  'message',
-              'label' =>  '14317 การอ่านภาษาอังกฤษ 2',
+              'label' =>  '14317 English Reading 2',
               'text' =>  'dlfile14317'
             )
             ),
@@ -283,7 +283,7 @@ array(
             'type' =>  'button',
             'action' => array(
               'type' =>  'message',
-              'label' =>  '14318 หลักการแปล',
+              'label' =>  '14318 Principles of Translation',
               'text' =>  'dlfile14318'
             )
             ),
@@ -291,7 +291,7 @@ array(
             'type' =>  'button',
             'action' => array(
               'type' =>  'message',
-              'label' =>  '14320 การออกเสียงภาษาอังกฤษ',
+              'label' =>  '14320 English Pronunciation',
               'text' =>  'dlfile14320'
             )
             ),
@@ -299,7 +299,7 @@ array(
             'type' =>  'button',
             'action' => array(
               'type' =>  'message',
-              'label' =>  '14421 การเขียนภาษาอังกฤษ 2',
+              'label' =>  '14421 English Writing 2',
               'text' =>  'dlfile14421'
             )
             )
@@ -343,7 +343,7 @@ array(
     'contents' => array(
       array(
         'type' =>  'text',
-        'text' =>  'Linguistics 14111',
+        'text' =>  'Self-Study Skills 14111',
         'size' =>  'xl',
         'weight' =>  'bold'
       ),
@@ -510,7 +510,7 @@ array(
     'contents' => array(
       array(
         'type' =>  'text',
-        'text' =>  'Linguistics 14213',
+        'text' =>  'English Reading 1 14213',
         'size' =>  'xl',
         'weight' =>  'bold'
       ),
@@ -677,7 +677,7 @@ array(
     'contents' => array(
       array(
         'type' =>  'text',
-        'text' =>  'Linguistics 14214',
+        'text' =>  'English Writing 1 14214',
         'size' =>  'xl',
         'weight' =>  'bold'
       ),
@@ -1011,7 +1011,7 @@ array(
     'contents' => array(
       array(
         'type' =>  'text',
-        'text' =>  'Linguistics 14216',
+        'text' =>  'Intercultural Communication 14216',
         'size' =>  'xl',
         'weight' =>  'bold'
       ),
@@ -1178,7 +1178,7 @@ array(
     'contents' => array(
       array(
         'type' =>  'text',
-        'text' =>  'Linguistics 14317',
+        'text' =>  'English Reading 2 14317',
         'size' =>  'xl',
         'weight' =>  'bold'
       ),
@@ -1345,7 +1345,7 @@ array(
     'contents' => array(
       array(
         'type' =>  'text',
-        'text' =>  'Linguistics 14318',
+        'text' =>  'Principles of Translation 14318',
         'size' =>  'xl',
         'weight' =>  'bold'
       ),
@@ -1512,7 +1512,7 @@ array(
     'contents' => array(
       array(
         'type' =>  'text',
-        'text' =>  'Linguistics 14320',
+        'text' =>  'English Pronunciation 14320',
         'size' =>  'xl',
         'weight' =>  'bold'
       ),
@@ -1679,7 +1679,7 @@ array(
     'contents' => array(
       array(
         'type' =>  'text',
-        'text' =>  'Linguistics 14421',
+        'text' =>  'English Writing 2 14421',
         'size' =>  'xl',
         'weight' =>  'bold'
       ),
