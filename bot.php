@@ -235,7 +235,7 @@ array(
             'type' =>  'button',
             'action' => array(
               'type' =>  'message',
-              'label' =>  '14211 การเรียนรู้ภาษาอังกฤษด้วยตนเอง',
+              'label' =>  '14111 ทักษะการเรียนรู้ภาษาอังกฤษด้วยตนเอง',
               'text' =>  'dlfile14111'
             )
             ),
@@ -243,23 +243,23 @@ array(
             'type' =>  'button',
             'action' => array(
               'type' =>  'message',
-              'label' =>  '14213 การเรียนรู้ภาษาอังกฤษด้วยตนเอง',
-              'text' =>  'dlfile14113'
+              'label' =>  '14213 การอ่านภาษาอังกฤษ 1',
+              'text' =>  'dlfile14213'
             )
             ),
           array(
             'type' =>  'button',
             'action' => array(
               'type' =>  'message',
-              'label' =>  '14216 การเรียนรู้ภาษาอังกฤษด้วยตนเอง',
-              'text' =>  'dlfile14116'
+              'label' =>  '14214 การเขียนภาษาอังกฤษ 1',
+              'text' =>  'dlfile14214'
             )
             ),
           array(
             'type' =>  'button',
             'action' => array(
               'type' =>  'message',
-              'label' =>  '14215 ภาษาศาสตร์เบื้องต้น',
+              'label' =>  '14215 ภาษาศาสตร์ภาษาอังกฤษเบื้องต้น',
               'text' =>  'dlfile14215'
             )
             ),
@@ -267,8 +267,40 @@ array(
             'type' =>  'button',
             'action' => array(
               'type' =>  'message',
-              'label' =>  '14318 ทักษะการแปล',
+              'label' =>  '14216 การสื่อสารระหว่างวัฒนธรรม',
+              'text' =>  'dlfile14216'
+            )
+            ),
+          array(
+            'type' =>  'button',
+            'action' => array(
+              'type' =>  'message',
+              'label' =>  '14317 การอ่านภาษาอังกฤษ 2',
+              'text' =>  'dlfile14317'
+            )
+            ),
+          array(
+            'type' =>  'button',
+            'action' => array(
+              'type' =>  'message',
+              'label' =>  '14318 หลักการแปล',
               'text' =>  'dlfile14318'
+            )
+            ),
+          array(
+            'type' =>  'button',
+            'action' => array(
+              'type' =>  'message',
+              'label' =>  '14320 การออกเสียงภาษาอังกฤษ',
+              'text' =>  'dlfile14320'
+            )
+            ),
+          array(
+            'type' =>  'button',
+            'action' => array(
+              'type' =>  'message',
+              'label' =>  '14421 การเขียนภาษาอังกฤษ 2',
+              'text' =>  'dlfile14421'
             )
             )
         )
