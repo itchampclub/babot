@@ -90,8 +90,9 @@ else if($message['type']=='text')
         }
 	else if(strpos($incomingMsg,"msg") !== false)
         {
-	$replyText = '123 ๑๒๓'.chr(10);
+	$replyText = 'line://app/1622706692-qRw2rKrL'.chr(10);
 	$replyText .= 'ABC กขค @#$'.chr(10);
+		
 		$reply = array(
 								'replyToken' => $replyToken,														
 								'messages' => array(
